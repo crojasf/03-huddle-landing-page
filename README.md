@@ -21,7 +21,7 @@ Para preparar el entorno se debe instalar Node.js en el equipo e instalar *gulp*
 + Aplicar MediaQuerys para estilos para Desktop y algunos ajustes finales.
 
 ## Demo
-El resultado del proyecto puede verse [aquí](https://crojasf.github.io/02-four-card-feature-section/).
+El resultado del proyecto puede verse [aquí](https://crojasf.github.io/03-huddle-landing-page/).
 
 ![desktop-final](/design/desktop-final.png)
 
@@ -64,9 +64,19 @@ exports.default = function(){
 ```
 + Ejecutar tarea de gulp `$ npx gulp` (los cambios en /src/*.scss se guartan en /css/style.css).
 
-+ Iniciar git en el proyecto ejecutando `$ git init`.
++ Crear repositorio en github y configurar GitHub Pages.
++ Iniciar git en el proyecto ejecutando:
 + Agregar en *.gitignore* la carpeta *node_modules*.
-+ Crear repositorio en github.
+```
+$ git init
+$ git add .
+$ git commit -m "Subir ficheros iniciales del proyecto"
+$ git branch -M main
+$ git remote add origin https://github.com/crojasf/03-huddle-landing-page.git
+$ git push -u origin main
+```
+
+
 
 
 
