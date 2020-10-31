@@ -65,8 +65,8 @@ exports.default = function(){
 + Ejecutar tarea de gulp `$ npx gulp` (los cambios en /src/*.scss se guartan en /css/style.css).
 
 + Crear repositorio en github y configurar GitHub Pages.
-+ Iniciar git en el proyecto ejecutando:
 + Agregar en *.gitignore* la carpeta *node_modules*.
++ Iniciar git en el proyecto ejecutando:
 ```
 $ git init
 $ git add .
