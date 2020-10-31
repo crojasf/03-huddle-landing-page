@@ -1,5 +1,0 @@
-body {
-  --bg-opacity: 1;
-  background-color: #2f855a;
-  background-color: rgba(47, 133, 90, var(--bg-opacity));
-}

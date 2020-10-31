@@ -31,12 +31,13 @@ El resultado del proyecto puede verse [aquí](https://crojasf.github.io/03-huddl
 Para iniciar el proyecto se realizaron los siguientes pasos:
 
 + Ejecutar `$ npm install --save-dev gulp` para instalar gulp en el proyecto.
-+ Ejecutar `$ npm init` para inicar el proyecto y sea creado el fichero *package.json*.
++ Ejecutar `$ npm init` para inicar el proyecto y se cree el fichero *package.json*.
 + Crear el fichero *gulfile.js* para llamar a las dependencias que instalemos, primero agregando el código `$ var gulp = require('gulp');`.
-+ Instalar las dependencias que vamos a utilizar ` $ npm install --save-dev gulp-cli postcss gulp-postcss autoprefixer tailwindcss gulp-sass`
-+ Agregar dependencias y tareas en *gulpfile.js*
++ Instalar las dependencias que vamos a utilizar ` $ npm install --save-dev gulp-cli postcss gulp-postcss autoprefixer tailwindcss gulp-sass`.
++ Agregar dependencias y tareas en *gulpfile.js*.
 
 ```js
+// gulpfile.js
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var sass = require('gulp-sass');
@@ -63,7 +64,6 @@ exports.default = function(){
 }
 ```
 + Ejecutar tarea de gulp `$ npx gulp` (los cambios en /src/*.scss se guartan en /css/style.css).
-
 + Crear repositorio en github y configurar GitHub Pages.
 + Agregar en *.gitignore* la carpeta *node_modules*.
 + Iniciar git en el proyecto ejecutando:
@@ -75,14 +75,6 @@ $ git branch -M main
 $ git remote add origin https://github.com/crojasf/03-huddle-landing-page.git
 $ git push -u origin main
 ```
-
-
-
-
-
-
-
-
 
 
 
