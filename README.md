@@ -53,14 +53,14 @@ function defaultTask(cb) {
 		autoprefixer,
 	];
 	// return gulp.src(['./src/*.scss', '!./src/_*.scss'])
-	return gulp.src('./src/*.scss')
+	return gulp.src('./src/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./css'));
 }
 
 exports.default = function(){
-	gulp.watch('./src/*.scss', gulp.series(defaultTask));
+	gulp.watch('./src/**/*.scss', gulp.series(defaultTask));
 }
 ```
 + Ejecutar tarea de gulp `$ npx gulp` (los cambios en /src/*.scss se guartan en /css/style.css).
@@ -75,6 +75,42 @@ $ git branch -M main
 $ git remote add origin https://github.com/crojasf/03-huddle-landing-page.git
 $ git push -u origin main
 ```
+
+
+## Detalle de arquitectura CSS
+Se utiliza una arquitectura de los ficheros SCSS basada en [sass-guidelin.es](https://sass-guidelin.es/es/#arquitectura)
+
+Se adapta a las necesidades de este proyecto:
+
+```
+sass/
+|
+|– vendors/
+|   |– _tailwind.scss   # tailwind
+|
+|– base/
+|   |– _base.scss        # Estilos Base Sass
+|
+|– utilities/
+|   |– _variables.scss   # Variables Sass
+|
+|– layout/
+|   |– _header.scss      # Encabezamiento
+|   |– _footer.scss      # Pie de página
+|
+|– components/
+|   |– _buttons.scss     # Botones
+|
+|– pages/
+|   |– _index.scss       # Estilos específicos para LandingPage
+|
+|– style.scss             # Archivo principal de Sass
+
+```
+
+
+
+
 
 
 

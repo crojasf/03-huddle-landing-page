@@ -13,12 +13,12 @@ function defaultTask(cb) {
 		autoprefixer,
 	];
 	// return gulp.src(['./src/*.scss', '!./src/_*.scss'])
-	return gulp.src('./src/*.scss')
+	return gulp.src('./src/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./css'));
 }
 
 exports.default = function(){
-	gulp.watch('./src/*.scss', gulp.series(defaultTask));
+	gulp.watch('./src/**/*.scss', gulp.series(defaultTask));
 }

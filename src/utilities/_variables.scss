@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/*
+===============================
+Colors
+===============================
+*/
+
+
+// Primary
+$color-primary: hsl(257, 40%, 49%); // Violet
+$color-secondary: white;
+
+
+/*
+===============================
+Typography
+===============================
+*/
+
+// Headings: 400, 700
+$font-headings: 'Poppins', sans-serif;
+
+// Body: 400
+$font-headings: 'Open Sans', sans-serif;
+
+
+
+/*
+===============================
+Breakpoints
+===============================
+*/
+$breakpoints: (
+  'small': 375px,
+  'medium': 992px,
+  'large': 1440px,
+);
+
+
+
+
+
+
+
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
