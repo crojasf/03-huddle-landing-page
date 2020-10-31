@@ -1,0 +1,21 @@
+{
+  "name": "03-huddle-landing-page-with-single-introductory-section-master",
+  "version": "1.0.0",
+  "description": "Tercer proyecto para practicar como desarrollador front-end.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.1.4",
+    "tailwindcss": "^1.9.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
