@@ -1,5 +1,16 @@
 
+
 body {
-	color: $color-secondary;
+	@apply max-w-screen-sm mx-auto my-0 px-10 bg-violet bg-body-sm bg-no-repeat bg-contain text-white;
 }
+
+// obligatorio usar @media porque por PostCss 
+// no permite usar los breakpoints de Tailwind
+@media (min-width: 375px) {
+  body {
+		@apply bg-body-xl;
+	}
+}
+
+
 

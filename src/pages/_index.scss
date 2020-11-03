@@ -1,0 +1,21 @@
+
+.landing {
+	@apply py-8;
+
+	&__image {
+
+	}
+
+	&__info {
+		@apply mt-16 mb-4 text-center;
+		&__title {
+			@apply text-2xl font-bold font-headings mb-5;
+		}
+		&__parraf {
+			@apply tracking-tight;
+		}
+	}
+
+}
+
+
