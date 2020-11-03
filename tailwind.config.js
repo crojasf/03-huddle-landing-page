@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         violet: 'hsl(257, 40%, 49%)',
       },
+      backgroundSize: {
+        '100%': '100%',
+      },
       fontFamily: {
         sans: [
           '"Open Sans"',

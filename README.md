@@ -93,6 +93,7 @@ sass/
 |
 |– utilities/
 |   |– _variables.scss   # Variables Sass
+|   |– mixins.scss       # Mixins Sass
 |
 |– layout/
 |   |– _header.scss      # Encabezamiento
@@ -100,6 +101,7 @@ sass/
 |
 |– components/
 |   |– _buttons.scss     # Botones
+|   |– icons.scss        # Iconos Sociales
 |
 |– pages/
 |   |– _index.scss       # Estilos específicos para LandingPage
@@ -107,6 +109,14 @@ sass/
 |– style.scss             # Archivo principal de Sass
 
 ```
+
+## Conclusiones
+
+El framework Taildwind (como cualquier otro) viene bien cuando el diseño está realizado usando en todo el proyecto tamaños relativos (usando *rem*), porque para maquetar *al pixel* es mejor crear nuestras propias clases.
+
+Por ejemplo, el tamaño del título en *Desktop* los tamaños 4xl o 5xl quedaban muy pequeño o muy grande.
+
+Se maqueta lo más parecido al diseño original debido a ese motivo.
 
 
 

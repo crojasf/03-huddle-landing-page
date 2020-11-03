@@ -1,4 +1,20 @@
 .footer {
 	@apply text-center;
+
+  // obligatorio usar @media / @screen porque por PostCss 
+	// no permite usar los breakpoints de Tailwind
+	// https://github.com/tailwindlabs/discuss/issues/91
+	@screen xl {
+		@include layout-xl;
+		@apply text-right;
+	}
+
+	& .icon {
+		@screen xl {
+		@apply w-10 h-10 pt-3 mx-2 text-base;
+		}
+	}
+
+
 }
 

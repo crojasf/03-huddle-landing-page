@@ -1,4 +1,11 @@
 
 .header {
 	@apply w-1/2 py-8;
+
+	// obligatorio usar @media / @screen porque por PostCss 
+	// no permite usar los breakpoints de Tailwind
+	// https://github.com/tailwindlabs/discuss/issues/91
+	@screen xl {
+		@include layout-xl;
+	}
 }

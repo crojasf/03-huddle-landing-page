@@ -2,17 +2,50 @@
 .landing {
 	@apply py-8;
 
+	// obligatorio usar @media / @screen porque por PostCss 
+	// no permite usar los breakpoints de Tailwind
+	// https://github.com/tailwindlabs/discuss/issues/91
+	@screen xl {
+		@include layout-xl;
+		@apply flex flex-no-wrap
+	}
+
 	&__image {
+		@screen xl {
+			@apply w-1/2;
+		}
 
 	}
 
 	&__info {
-		@apply mt-16 mb-4 text-center;
+		@apply mt-12 mb-4 text-center;
+		
+		@screen xl {
+			@apply w-1/2 pl-16 text-left;
+		}
+
 		&__title {
 			@apply text-2xl font-bold font-headings mb-5;
+
+			@screen xl {
+				font-size: 40px;
+				font-weight: normal;
+			}
 		}
 		&__parraf {
 			@apply tracking-tight;
+			@screen xl {
+				@apply text-lg;
+			}
+		}
+		& .button {
+			@apply w-3/4;
+
+			@screen xl {
+				@apply w-1/3 text-lg;
+			}
+
+
 		}
 	}
 

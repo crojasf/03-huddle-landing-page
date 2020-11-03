@@ -33,11 +33,9 @@ $font-headings: 'Open Sans', sans-serif;
 Breakpoints
 ===============================
 */
-$breakpoints: (
-  'small': 375px,
-  'medium': 992px,
-  'large': 1440px,
-);
+$breakpoint-sm: 375px;
+$breakpoint-xl: 1440px;
+
 
 
 

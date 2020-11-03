@@ -1,14 +1,18 @@
+@use "sass:map";
+
+
 
 
 body {
-	@apply max-w-screen-sm mx-auto my-0 px-10 bg-violet bg-body-sm bg-no-repeat bg-contain text-white;
+	@apply max-w-screen-sm mx-auto my-0 px-10 bg-violet bg-body-sm bg-no-repeat bg-100% text-white ;
 }
 
-// obligatorio usar @media porque por PostCss 
+// obligatorio usar @media / @screen porque por PostCss 
 // no permite usar los breakpoints de Tailwind
-@media (min-width: 375px) {
+// https://github.com/tailwindlabs/discuss/issues/91
+@screen xl {
   body {
-		@apply bg-body-xl;
+		@apply bg-body-xl px-0 max-w-full ;
 	}
 }
 

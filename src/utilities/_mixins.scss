@@ -1,0 +1,6 @@
+
+@mixin layout-xl {
+    width: $breakpoint-xl;
+		@apply mx-auto px-20;
+}
+
